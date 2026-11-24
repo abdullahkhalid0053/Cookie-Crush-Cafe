@@ -1,0 +1,38 @@
+/* Member 1: Global Shell & Homepage Responsive Rules */
+@media (max-width: 900px) {
+  .bestseller-grid,
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .combo-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .combo-cta {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-wrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .bestseller-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
