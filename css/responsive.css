@@ -1,7 +1,8 @@
 /* Member 1: Global Shell & Homepage Responsive Rules */
 @media (max-width: 900px) {
   .bestseller-grid,
-  .footer-grid {
+  .footer-grid,
+  .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -17,6 +18,12 @@
   /* Member 2: Menu Page Responsive Rules */
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Member 3: About & Contact Responsive Rules */
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -38,7 +45,9 @@
 
   .bestseller-grid,
   .footer-grid,
-  .menu-grid {
+  .menu-grid,
+  .team-grid,
+  .values-row {
     grid-template-columns: 1fr;
   }
 }
