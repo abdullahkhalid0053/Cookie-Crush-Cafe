@@ -1,49 +1,52 @@
-/* Member 1: Global Shell & Homepage Responsive Rules */
-@media (max-width: 900px) {
+/* Responsive Breakpoints across Home, Menu, About & Contact */
+@media (max-width: 960px) {
   .bestseller-grid,
+  .craft-grid,
   .footer-grid,
-  .team-grid {
+  .team-grid,
+  .menu-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 
   .combo-box {
     flex-direction: column;
     align-items: flex-start;
+    padding: 36px 28px;
   }
 
   .combo-cta {
     text-align: left;
   }
-
-  /* Member 2: Menu Page Responsive Rules */
-  .menu-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Member 3: About & Contact Responsive Rules */
-  .about-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .nav-wrapper {
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
   }
 
   .nav-list {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 14px;
+    gap: 16px;
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.85rem;
   }
 
+  .page-banner h1 {
+    font-size: 2.35rem;
+  }
+
+  .hero-metrics,
   .bestseller-grid,
+  .craft-grid,
   .footer-grid,
   .menu-grid,
   .team-grid,

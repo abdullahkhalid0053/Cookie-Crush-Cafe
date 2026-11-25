@@ -1,81 +1,77 @@
-/* Member 3 (Abdullah Khalid): About Us & Contact Pages Styles */
-.page-tag {
-  display: inline-block;
-  background-color: var(--blush-accent);
-  color: var(--espresso);
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 4px 11px;
-  border-radius: 4px;
-  margin-bottom: 12px;
+/* Member 3 (Abdullah Khalid): Editorial About Us & Contact Pages */
+.about-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 48px; align-items: center; }
+.about-text h2 { font-size: 2.65rem; margin-bottom: 16px; color: var(--espresso-deep); }
+.about-text p { color: var(--muted-light); margin-bottom: 16px; font-size: 0.96rem; }
+
+.about-image {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  box-shadow: 0 22px 46px rgba(18, 14, 12, 0.14);
 }
+.about-image img { width: 100%; height: 420px; object-fit: cover; }
 
-.about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 38px; align-items: center; }
-.about-text h2 { font-size: 2rem; margin-bottom: 14px; }
-.about-text p { color: var(--text-muted); margin-bottom: 14px; }
-.about-image { border-radius: 12px; overflow: hidden; border: 1px solid var(--border-soft); box-shadow: 0 12px 26px rgba(59, 35, 20, 0.08); }
-.about-image img { width: 100%; height: 360px; object-fit: cover; }
+.values-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 26px; }
+.value-pill { background-color: var(--surface); border: 1px solid var(--border-light); border-top: 3px solid var(--amber); padding: 14px; border-radius: 10px; }
+.value-pill strong { display: block; font-size: 0.92rem; color: var(--espresso-deep); margin-bottom: 2px; }
+.value-pill span { font-size: 0.8rem; color: var(--muted-light); }
 
-.values-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 22px; }
-.value-pill { background-color: var(--surface-white); border: 1px solid var(--border-soft); border-left: 4px solid var(--caramel); padding: 12px; border-radius: 8px; }
-.value-pill strong { display: block; font-size: 0.95rem; color: var(--cocoa-dark); }
-.value-pill span { font-size: 0.82rem; color: var(--text-muted); }
-
-.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .team-card {
-  background-color: var(--surface-white);
-  border: 1px solid var(--border-soft);
-  border-radius: 10px;
-  padding: 28px 22px;
+  background-color: var(--surface);
+  border: 1px solid var(--border-light);
+  border-radius: 14px;
+  padding: 34px 24px;
   text-align: center;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-.team-card:hover { transform: translateY(-5px); box-shadow: 0 10px 24px rgba(59, 35, 20, 0.1); }
+.team-card:hover { transform: translateY(-6px); box-shadow: 0 18px 36px rgba(18, 14, 12, 0.1); border-color: var(--amber); }
+
 .team-avatar {
-  width: 68px;
-  height: 68px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
-  background-color: var(--cocoa-dark);
-  color: var(--surface-white);
-  font-size: 1.35rem;
+  background-color: var(--obsidian);
+  color: var(--amber);
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 14px auto;
-  border: 3px solid var(--caramel);
+  margin: 0 auto 16px auto;
+  border: 2px solid var(--amber);
 }
-.team-role { display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; color: var(--caramel-dark); margin-bottom: 4px; }
-.team-card h3 { font-size: 1.2rem; margin-bottom: 6px; }
-.roll-badge { display: inline-block; background-color: var(--blush-accent); color: var(--espresso); font-size: 0.8rem; font-weight: 700; padding: 3px 10px; border-radius: 14px; margin-bottom: 10px; }
-.team-card p { font-size: 0.9rem; color: var(--text-muted); }
 
-.contact-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 32px; align-items: start; }
-.contact-info-card { background-color: var(--cocoa-dark); color: var(--blush-accent); padding: 32px; border-radius: 12px; }
-.contact-info-card h2 { color: var(--surface-white); font-size: 1.75rem; margin-bottom: 10px; }
-.contact-info-card > p { margin-bottom: 22px; font-size: 0.94rem; }
-.info-list { display: flex; flex-direction: column; gap: 16px; margin-bottom: 22px; }
-.info-item strong { display: block; color: var(--caramel); font-size: 0.86rem; text-transform: uppercase; letter-spacing: 0.4px; }
-.info-item span { color: var(--surface-white); font-size: 0.96rem; }
-.order-note { background-color: rgba(255, 255, 255, 0.08); border-left: 3px solid var(--caramel); padding: 12px 14px; border-radius: 6px; font-size: 0.86rem; }
+.team-role { display: block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--amber-hover); margin-bottom: 6px; }
+.team-card h3 { font-size: 1.55rem; margin-bottom: 8px; }
+.roll-badge { display: inline-block; background-color: var(--stone); color: var(--espresso-deep); font-size: 0.78rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; }
+.team-card p { font-size: 0.89rem; color: var(--muted-light); }
 
-.contact-form-card { background-color: var(--surface-white); border: 1px solid var(--border-soft); padding: 32px; border-radius: 12px; }
-.contact-form-card h2 { font-size: 1.75rem; margin-bottom: 6px; }
-.contact-form-card > p { color: var(--text-muted); font-size: 0.93rem; margin-bottom: 20px; }
-.inquiry-form { display: flex; flex-direction: column; gap: 16px; }
-.form-group { display: flex; flex-direction: column; gap: 6px; }
-.form-group label { font-size: 0.88rem; font-weight: 700; color: var(--cocoa-dark); }
+.contact-grid { display: grid; grid-template-columns: 0.92fr 1.08fr; gap: 36px; align-items: start; }
+.contact-info-card { background-color: var(--obsidian); color: var(--muted-dark); padding: 40px 34px; border-radius: 16px; border: 1px solid var(--border-dark); }
+.contact-info-card h2 { color: var(--cream); font-size: 2.2rem; margin-bottom: 10px; }
+.contact-info-card > p { margin-bottom: 26px; font-size: 0.94rem; }
+.info-list { display: flex; flex-direction: column; gap: 18px; margin-bottom: 26px; }
+.info-item strong { display: block; color: var(--amber); font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 3px; }
+.info-item span { color: var(--cream); font-size: 0.96rem; }
+.order-note { background-color: rgba(212, 137, 74, 0.1); border-left: 3px solid var(--amber); padding: 14px 16px; border-radius: 8px; font-size: 0.86rem; color: var(--cream); }
+
+.contact-form-card { background-color: var(--surface); border: 1px solid var(--border-light); padding: 40px 36px; border-radius: 16px; box-shadow: 0 16px 36px rgba(18, 14, 12, 0.06); }
+.contact-form-card h2 { font-size: 2.2rem; margin-bottom: 8px; }
+.contact-form-card > p { color: var(--muted-light); font-size: 0.93rem; margin-bottom: 24px; }
+.inquiry-form { display: flex; flex-direction: column; gap: 18px; }
+.form-group { display: flex; flex-direction: column; gap: 7px; }
+.form-group label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--espresso-deep); }
 .form-group input, .form-group select, .form-group textarea {
   width: 100%;
-  padding: 11px 13px;
-  border: 1px solid var(--border-soft);
-  border-radius: 6px;
-  background-color: var(--bg-cream);
+  padding: 12px 14px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background-color: var(--cream);
   font-family: inherit;
   font-size: 0.94rem;
-  color: var(--cocoa-dark);
+  color: var(--espresso-deep);
 }
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--caramel); background-color: var(--surface-white); }
-.btn-submit { width: 100%; font-size: 1rem; margin-top: 4px; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--amber); background-color: var(--surface); }
+.btn-submit { width: 100%; margin-top: 6px; }
